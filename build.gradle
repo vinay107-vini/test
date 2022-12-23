@@ -52,18 +52,6 @@ subprojects {
     apply plugin: 'eclipse'
     apply plugin: 'signing'
     apply plugin: 'jacoco'
-    
-    plugins {
-  id "org.sonarqube" version "3.5.0.2730"
-}
-
-sonarqube {
-  properties {
-    property "sonar.projectKey", "vinay107-vini_test"
-    property "sonar.organization", "vinay107-vini"
-    property "sonar.host.url", "https://sonarcloud.io"
-  }
-}
 
     compileJava {
         sourceCompatibility = '1.8'
