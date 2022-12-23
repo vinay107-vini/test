@@ -1,0 +1,18 @@
+plugins {
+    id 'java-gradle-plugin'
+}
+
+ext.pomProjectName = 'dOOv Generator Core'
+
+dependencies {
+    compile project(':doov-generator-core')
+}
+
+gradlePlugin {
+    plugins {
+        doovGeneratorPlugin {
+            id = 'io.doov.generator'
+            implementationClass = 'io.doov.gen.GeneratorPlugin'
+        }
+    }
+}
